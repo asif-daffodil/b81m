@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Personal ChatGTP</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			text-align: center;
+			font-size: 24px;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 999;
+		}
+
+		nav {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #555;
+			padding: 5px;
+			margin-bottom: 20px;
+		}
+
+		nav a {
+			color: #fff;
+			text-decoration: none;
+			padding: 10px;
+			margin: 0 5px;
+			font-size: 18px;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			border-radius: 5px;
+		}
+
+		nav a:hover {
+			background-color: #fff;
+			color: #333;
+		}
+
+		section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 70px;
+		}
+
+		h1 {
+			font-size: 36px;
+			text-align: center;
+			margin-bottom: 50px;
+		}
+
+		.product {
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			width: 80%;
+			max-width: 1000px;
+		}
+
+		.product img {
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+			margin-right: 20px;
+		}
+
+		.product h2 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+
+		.product p {
+			font-size: 16px;
+			margin-bottom: 10px;
+			line-height: 1.5;
+		}
+
+		.product button {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		.product button:hover {
+			background-color: #555;
+		}
+
+		.form-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			width: 80%;
+			max-width: 1000px;
+		}
+
+		.form-container label {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		.form-container input[type="text"],
+		.form-container input[type="email"],
+		.form-container textarea {
+		width: 100%;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		font-size: 16px;
+		box-sizing: border-box;
+	}
+
+	.form-container button[type="submit"] {
+		background-color: #333;
+		color: #fff;
+		padding: 10px;
+		border: none;
+		border-radius: 5px;
+		font-size: 16px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+
+	.form-container button[type="submit"]:hover {
+		background-color: #555;
+	}
+
+	.marquee-container {
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		width: 80%;
+		max-width: 1000px;
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+
+	.marquee-container marquee {
+		font-size: 24px;
+		font-weight: bold;
+		white-space: nowrap;
+		margin: 0;
+	}
+
+	.contact-info {
+		display: flex;
+		align-items: center;
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 10px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		width: 80%;
+		max-width: 1000px;
+		margin-bottom: 20px;
+	}
+
+	.contact-info img {
+		width: 100px;
+		height: 100px;
+		object-fit: cover;
+		margin-right: 20px;
+		border-radius: 50%;
+	}
+
+	.contact-info p {
+		font-size: 16px;
+		margin-bottom: 10px;
+		line-height: 1.5;
+	}
+</style>
+</head>
+<body>
+	<header>
+		<h1>ChatGTP is Brainless</h1>
+	</header>
+	<nav>
+		<a href="#">Home</a>
+		<a href="#">Products</a>
+		<a href="#">Contact Us</a>
+	</nav>
+	<section>
+		<h1>Welcome to our Furniture Company</h1>
+		<div class="marquee-container">
+			<marquee behavior="scroll" direction="left">Check out our new line of bedroom furniture! Save 20% off all purchases over $500!</marquee>
+		</div>
+		<div class="product">
+			<img src="https://via.placeholder.com/200x200.png?text=Product+Image" alt="Product Image">
+			<div>
+				<h2>Product Title</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada purus id felis sodales aliquam.</p>
+				<button>Add to Cart</button>
+			</div>
+		</div>
+		<div class="product">
+			<img src="https://via.placeholder.com/200x200.png?text=Product+Image" alt="Product Image">
+			<div>
+				<h2>Product Title</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada purus id felis sodales aliquam.</p>
+				<button>Add to Cart</button>
+			</div>
+		</div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x200.png?text=Product+Image" alt="Product Image">
+            <div>
+                <h2>Product Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada purus id felis sodales aliquam.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x200.png?text=Product+Image" alt="Product Image">
+            <div>
+                <h2>Product Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada purus id felis sodales aliquam.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="https://via.placeholder.com/200x200.png?text=Product+Image" alt="Product Image">
+            <div>
+                <h2>Product Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis malesuada purus id felis sodales aliquam.</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <center>
+        <div class="contact-info">
+            <img src="https://via.placeholder.com/100x100.png?text=Company+Logo" alt="Company Logo">
+            <div>
+                <p><strong>My Furniture Company</strong></p>
+                <p>1234 Main Street</p>
+                <p>Anytown, USA 12345</p>
+                <p>Phone: (555) 555-1234</p>
+            </div>
+        </div>
+        <form class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </center>
+    <footer>
+        <p>&copy; 2023 My Furniture Company</p>
+    </footer>
+</body>
+</html>    
+
+

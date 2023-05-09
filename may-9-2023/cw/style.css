@@ -1,0 +1,83 @@
+.sb{
+    border-width: 0;
+    width: 100px;
+    height: 40px;
+    background: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/*
+this is a comment
+*/
+
+/* this is another comment */
+
+.text {
+    font-size: 18px;
+    font-style: italic;
+    font-family: arial;
+    font-weight: bolder;
+    /* text-transform: uppercase; */
+    font-variant: small-caps;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    text-decoration: underline;
+    text-align: center;
+    color: red;
+    text-shadow: 2px 2px 3px black;
+    width: 400px;
+    /* margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 520px; */
+    /* margin: 20px auto 20px auto; */
+    /* margin: 20px auto; */
+    margin: 40px;
+    /* border-width: 2px;
+    border-style: solid;
+    border-color: red; */
+    border: 2px solid red;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.p{
+    display: inline;
+    background: lightcoral;
+    padding: 20px;
+    margin: 20px;
+    /* 
+    margin: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    width: 200px;
+    height: 300px; 
+    */
+}
+.d{
+    display: inline;
+}
+.b{
+    display: block;
+    width: 300px;
+    background: lightblue;
+    height: 50px;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+.kuddusBoyati {
+    display: inline-block;
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: hotpink;
+    color: white;
+    margin: 20px;
+}
+
