@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dhaka {
+    width: 300px;
+    background: #29c44a;
+    padding: 20px;
+}
+
+.khulna {
+    width: 300px;
+    height: 200px;
+    background: rgba(255, 0, 0, 0.5);
+    margin-top: -40px;
+    margin-left: 50px;
+    /* opacity: 0.2; */
+    text-align: right;
+}
+
+.messi {
+    width: 600px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 20px auto;
+    background: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /* background-position: center; */
+}
+
+.champ {
+    width: 300px;
+    height: 200px;
+    margin: 20px auto;
+    background: linear-gradient(to top right, black, lime, black);
+    display: flex;
+}
+
+.cp {
+    width: 220px;
+    height: 140px;
+    background: orange;
+    margin: auto;
+}

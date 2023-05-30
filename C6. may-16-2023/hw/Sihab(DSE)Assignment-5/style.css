@@ -1,0 +1,15 @@
+.black{
+    width: 500px;
+    height: 100px;
+    background-color: black;
+}
+.red{
+    width: 500px;
+    height: 100px;
+    background-color: red;
+}
+.yellow{
+    width: 500px;
+    height: 100px;
+    background-color: yellow;
+}
