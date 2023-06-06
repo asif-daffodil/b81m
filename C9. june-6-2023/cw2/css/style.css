@@ -28,6 +28,8 @@
     margin: auto;
     background: #f00;
     border-radius: 50%;
+    box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+    border: 1px solid #000;
 }
 
 .flag::before {
