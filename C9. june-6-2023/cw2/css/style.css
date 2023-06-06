@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.flag {
+    width: 300px;
+    height: 200px;
+    background: #0a0;
+    display: flex;
+    margin: auto;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+    border-radius: 6px 6px 0 0;
+    position: relative;
+}
+
+.golla {
+    width: 140px;
+    height: 140px;
+    margin: auto;
+    background: #f00;
+    border-radius: 50%;
+}
+
+.flag::before {
+    content: "Bangladesh";
+    position: absolute;
+    width: 100%;
+    line-height: 40px;
+    bottom: -42px;
+    text-align: center;
+    border: 1px solid #000;
+    border-top-width: 0;
+    background: #fff;
+    box-shadow: 0 0 10px #000, 0 0 10px #000 inset;
+    left: -1px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 0 2px #000;
+}

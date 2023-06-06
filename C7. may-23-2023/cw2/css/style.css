@@ -37,6 +37,7 @@
     top: -150px;
     right: -150px;
     transition: 0.5s;
+    transition-delay: 0.5s;
 }
 
 .chain {
@@ -47,6 +48,7 @@
     bottom: -150px;
     left: -150px;
     transition: 0.5s;
+    transition-delay: 1s;
 }
 
 .kane {
@@ -57,6 +59,7 @@
     right: -150px;
     bottom: -150px;
     transition: 0.5s;
+    transition-delay: 1.5s;
 }
 
 .pain:hover .rain{
