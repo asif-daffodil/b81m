@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text {
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 6px;
+}
+
+.pera {
+    font-family: 'Dancing Script', cursive;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 6px;
+}

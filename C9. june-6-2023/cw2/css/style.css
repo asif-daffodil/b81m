@@ -48,3 +48,11 @@
     letter-spacing: 2px;
     text-shadow: 0 0 2px #000;
 }
+
+.flag:hover {
+    background: #fff;
+}
+
+.flag:hover::before {
+    content: "Japan";
+}

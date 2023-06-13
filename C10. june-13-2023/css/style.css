@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald;
+}
+
+.parent {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.chield-1 {
+    background: dodgerblue;
+}
+
+.chield-2 {
+    background: limegreen;
+}
+
+.chield-3 {
+    background: orange;
+}
+
+.parent > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 0 10px #000, 0 0 3px #000 inset;
+    border-radius: 6px;
+}
+
+.parent > div > img {
+    border-radius: 50%;
+}
+
+.parent > div > p {
+    text-align: center;
+    font-style: italic;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.parent > div > h2 {
+    line-height: 40px;
+    margin: 9px 0;
+}
+
+.parent > div > h2 > span {
+    color: #fff;
+}
+
+.parent > div > button {
+    border-width: 0;
+    padding: 8px 20px;
+    margin-top: 12px;
+    background: #000;
+    color: #fff;
+    border-radius: 20px/50%;
+    cursor: pointer;
+}
+
+.parent > div > button:hover {
+    box-shadow: 0 0 10px #000;
+}
+
+.masonary {
+    display: grid;
+    width: 100%;
+    height: 200vh;
+    grid-template-areas: 
+    "area1 area1 area2 area3" 
+    "area4 area5 area5 area3" 
+    "area6 area7 area8 area9" 
+    "area6 area10 area11 area12"
+    "area13 area14 area15 area15"
+    "area13 area14 area16 area16";
+    grid-gap: 6px;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.masonary > div {
+    overflow: hidden;
+}
+
+.masonary > div > img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+
+.masonary > div:hover > img {
+    width: 120%;
+}
+
+.masonary > div:first-child{
+    grid-area: area1;
+}
+
+.masonary > div:nth-child(2){
+    grid-area: area2;
+}
+
+.masonary > div:nth-child(3){
+    grid-area: area3;
+}
+
+.masonary > div:nth-child(4){
+    grid-area: area4;
+}
+
+.masonary > div:nth-child(5){
+    grid-area: area5;
+}
+
+.masonary > div:nth-child(6){
+    grid-area: area6;
+}
+
+.masonary > div:nth-child(7){
+    grid-area: area7;
+}
+
+.masonary > div:nth-child(8){
+    grid-area: area8;
+}
+
+.masonary > div:nth-child(9){
+    grid-area: area9;
+}
+
+.masonary > div:nth-child(10){
+    grid-area: area10;
+}
+
+.masonary > div:nth-child(11){
+    grid-area: area11;
+}
+
+.masonary > div:nth-child(12){
+    grid-area: area12;
+}
+
+.masonary > div:nth-child(13){
+    grid-area: area13;
+}
+
+.masonary > div:nth-child(14){
+    grid-area: area14;
+}
+
+.masonary > div:nth-child(15){
+    grid-area: area15;
+}
+
+.masonary > div:last-child {
+    grid-area: area16;
+}
