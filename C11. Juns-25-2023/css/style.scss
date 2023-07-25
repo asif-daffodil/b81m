@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    width: 100%;
+    background: #000;
+    >.menu{
+        width: 750px;
+        margin: auto;
+        list-style: none;
+        display: flex;
+        text-align: center;
+        li{
+            width: 100%;
+            position: relative;
+            a{
+                text-decoration: none;
+                line-height: 50px;
+                color: #fff;
+                font-size: 20px;
+                display: block;
+            }
+            &:hover{
+                background: #00f;
+                >.snav{
+                    display: block;
+                }
+            }
+            >.snav{
+                width: 100%;
+                list-style: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background: #000;
+                display: none;
+            }
+        }
+    }
+}
