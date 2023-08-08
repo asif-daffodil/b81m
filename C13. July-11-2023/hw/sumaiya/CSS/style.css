@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.putin > img{
+    width: 450px;
+    height: 350px;
+}
+
+.extra{
+    margin-left: 20px;
+}
+
+.extra > p{
+    width: 271px;
+    margin: 20px 0;
+}
+
+.extra > button{
+    border-width: 0;
+    padding: 8px 16px;
+    color: #fff;
+    background: linear-gradient(rgb(110, 110, 10), rgb(15, 167, 15));
+    cursor: pointer;
+}

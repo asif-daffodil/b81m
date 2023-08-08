@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("./chacchu.css");
+
+$bC: rgba(0, 0, 255, 0.8);
+
+@mixin center ($jc: center, $ai: center) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+@mixin wh ($w, $h){
+  width: $w;
+  height: $h;
+}
+
+.d1, .d2, .d3, .d4, .d5 {
+  border: 3px solid #f00;
+  @include center(center, end);
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  background: $bC;
+}
+
+.myBg {
+  background: linear-gradient(lightblue, lightgreen);
+}
+
+.main{
+  @extend .myBg;
+  @include center();
+  >.d1 {
+    @include wh(200px, 200px);
+    >.d2{
+      @include wh(170px, 170px);
+      >.d3{
+        @include wh(140px, 140px);
+        >.d4{
+          @include wh(110px, 110px);
+          >.d5{
+            @include wh(80px, 80px);
+          }
+        }
+      }
+    }
+  }
+}

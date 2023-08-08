@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: url("../images/cursor.png"), auto;
+}
+
+body {
+    animation: ba 2s infinite;
+}
+
+@keyframes ba {
+    0% {background: lightblue;}
+    50% {background: lightgoldenrodyellow;}
+    100% {background: lightblue;}
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main > div {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0px 0px 0px #000, 0 0 3px #ddd inset;
+    transition: 0.5s;
+    margin: 0 6px;
+    background: #fff;
+    cursor: pointer;
+}
+
+.d1:hover {
+    transform: translate(-9px, -9px) scale(0.9) skew(-9deg, 9deg) rotateX(9deg) rotateY(-9deg) rotateZ(-6deg);
+    box-shadow: 9px 9px 9px #000, 0 0 3px #ddd inset;
+}
+
+
+.pain {
+    width: 100%;
+    display: grid;
+}
+
+.pain > div {
+    background: #fff;
+}
+
+@media screen and (min-width: 1020px) {
+    .pain {
+        padding: 20px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    .pain > div {
+        padding: 20px;
+        color: red;
+        border: 1px solid red;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1020px) {
+    .pain {
+        padding: 16px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+    }
+
+    .pain > div {
+        padding: 16px;
+        color: green;
+        border: 1px solid green;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .pain {
+        padding: 12px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 12px;
+    }
+
+    .pain > div {
+        padding: 12px;
+        color: blue;
+        border: 1px solid blue;
+    }
+    
+}

@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.masionary {
+    
+    display: grid;
+    grid-gap: 6px;
+    padding: 6px;
+    width: 100vw;
+    height: 200vh;
+    overflow: hidden;
+    grid-template-areas: 
+    "a1 a1 a2 a3"
+    "a4 a5 a5 a3"
+    "a6 a7 a8 a9"
+    "a6 a10 a11 a12"
+    "a13 a14 a15 a15"
+    "a13 a16 a16 a16";
+}
+
+.masionary > div {
+    overflow: hidden;
+}
+.masionary > div > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+
+.masionary > div:hover>img{
+    width:120% ;
+    height: 120%;
+}
+
+.masionary > div:first-child{
+    grid-area: a1;
+}
+
+.masionary > div:nth-child(2){
+    grid-area: a2;
+}
+
+.masionary > div:nth-child(3){
+    grid-area: a3;
+}
+
+.masionary > div:nth-child(4){
+    grid-area: a4;
+}
+
+.masionary > div:nth-child(5){
+    grid-area: a5;
+}
+
+.masionary > div:nth-child(6){
+    grid-area: a6;
+}
+
+.masionary > div:nth-child(7){
+    grid-area: a7;
+}
+
+.masionary > div:nth-child(8){
+    grid-area: a8;
+}
+
+.masionary > div:nth-child(9){
+    grid-area: a9;
+}
+
+.masionary > div:nth-child(10){
+    grid-area: a10;
+}
+
+.masionary > div:nth-child(11){
+    grid-area: a11;
+}
+
+.masionary > div:nth-child(12){
+    grid-area: a12;
+}
+
+.masionary > div:nth-child(13){
+    grid-area: a13;
+}
+
+.masionary > div:nth-child(14){
+    grid-area: a14;
+}
+
+.masionary > div:nth-child(15){
+    grid-area: a15;
+}
+
+.masionary > div:nth-child(16){
+    grid-area: a16;
+}
+

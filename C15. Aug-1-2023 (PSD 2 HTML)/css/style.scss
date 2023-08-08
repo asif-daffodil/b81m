@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap');
+
+$monFont : 'Montserrat', sans-serif; 
+$grandFont: 'Grand Hotel', cursive;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $monFont;
+}
+
+header{
+    width: 1020px;
+    height: 564px;
+    margin: auto;
+    position: relative;
+    .top-bar{
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        padding: 30px 42px;
+        >figure{
+            >img{
+                width: 132px;
+            }
+        }
+        >nav{
+            display: flex;
+            margin-left: auto;
+            >ul{
+                list-style: none;
+                display: flex;
+                >li{
+                     margin-right: 30px;
+                    >a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 18px;
+                    }
+                }
+            }
+            >form{
+                >button{
+                    border-width: 0;
+                    background: transparent;
+                    color: #fff;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .banner{
+        height: 100%;
+        width: 100%;
+        position: relative;
+        background: #333333;
+        >div{
+            display: flex;
+            justify-content: center;
+            align-items: start;
+            flex-direction: column;
+            &:first-child{
+                width: 428px;
+                height: 564px;
+                background: url("../images/banner.png") no-repeat top left /100% 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            &:last-child{
+                width: 716px;
+                height: 564px;
+                background: url("../images/banner-right.png") no-repeat center /100% 100%;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding-left: 160px;
+                >h1{
+                    font-size: 88px;
+                    font-family: $grandFont;
+                    color: #ffc200;
+                    font-weight: 300;
+                }
+                >article{
+                    color: #fff;
+                    font-size: 21px;
+                    margin-bottom: 30px;
+                }
+                >button{
+                    background: #ffc100;
+                    color: #333333;
+                    font-size: 14px;
+                    font-weight: 700;
+                    width: 174px;
+                    height: 36px;
+                    border-width: 0;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+main {
+    width: 1020px;
+    margin: auto;
+    >.best-seller{
+        >h2{
+            font-family: $grandFont;
+            font-size: 53px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 16px;
+            margin-top: 80px;
+            font-weight: 400;
+        }
+        >article{
+            text-align: center;
+            width: 580px;
+            margin: auto;
+            font-size: 18px;
+            color: #333;
+        }
+        >.sellers{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 50px 0;
+            >div{
+                text-align: center;
+                >figure{
+                    >img{
+                        width: 170px;
+                    }
+                }
+                >h3{
+                    font-family: $grandFont;
+                    font-size: 30px;
+                    font-weight: 400;
+                    color: #333;
+                }
+                >article{
+                    font-size: 12px;
+                    color: #333;
+                    width: 170px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    >.oriental-taste{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background: url("../images/oriental-test-bg.png");
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        >figure{
+            text-align: center;
+            img{
+                width: 329px;
+            }
+        }
+        >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            >h2{
+                font-size: 71px;
+                font-family: $grandFont;
+                color: #ffc200;
+                font-weight: 400;
+                line-height: 71px;
+            }
+            >article{
+                width: 370px;
+                margin: 30px 0 36px;
+                font-size: 18px;
+                color: #fff;
+            }
+            >button{
+                width: 229px;
+                height: 46px;
+                background: #ffc100;
+                color: #333;
+                font-size: 18px;
+                font-weight: 700;
+                border-width: 0;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+    >.statistics{
+        background: url("../images/oriental-test.design.png") no-repeat center /auto 90%, linear-gradient(#2f2f2f, #2f2f2f);
+        height: 514px;
+        >h2{
+            font-size: 71px;
+            color: #ffc200;
+            font-weight: 400;
+            font-family: $grandFont;
+            text-align: center;
+        }
+        >article{
+            text-align: center;
+            width: 560px;
+            margin: auto;
+            color: #fff;
+            margin-bottom: 70px;
+        }
+        >.count{
+            display: flex;
+            justify-content: center;
+            >div{
+                &:not(:last-child){
+                    margin-right: 36px;
+                }
+                width: 166px;
+                height: 166px;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border: 3px solid #fff;
+                font-size: 20px;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 700;
+                >span{
+                    font-size: 36px;
+                    color: #ffc200;
+                }
+            }
+        }
+    }
+    >.chicken-grill{
+        @extend .oriental-taste;
+        height: 566px;
+        background: url("../images/chicken-grill-bg.png") no-repeat top left /100% 90%;
+        >div{
+            margin-left: 90px;
+            padding-top: 0;
+        }
+    }
+    >.lenora-fields{
+        height: 560px;
+        background: url("../images/lenora-fields.png") no-repeat center /cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        >article{
+            font-size: 32px;
+            color: #333;
+            text-align: center;
+            width: 660px;
+            margin-bottom: 30px;
+        }
+        >h2{
+            text-align: center;
+            font-family: $grandFont;
+            font-size: 53px;
+            color: #333;
+            font-weight: 400;
+        }
+    }
+    >.subscribe{
+        height: 560px;
+        background: url("../images/subscribe-bg.png") no-repeat center /cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        >h2{
+            font-family: $grandFont;
+            font-size: 71px;
+            color: #333;
+            text-align: center;
+        }
+        >article{
+            font-size: 21px;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            width: 620px;
+            margin: 16px auto 48px;
+        }
+        >form{
+            width: max-content;
+            margin: 0 auto;
+            display: flex;
+            >input[type="text"]{
+                padding: 0 20px;
+                width: 390px;
+                border-width: 0;
+                height: 44px;
+                &::placeholder{
+                    color: rgba(51, 51, 51, 0.5);
+                    font-size: 18px;
+                }
+            }
+            >button{
+                width: 155px;
+                height: 44px;
+                border-width: 0;
+                text-transform: uppercase;
+                background: #ffc100;
+                color: #333;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+    }
+}
