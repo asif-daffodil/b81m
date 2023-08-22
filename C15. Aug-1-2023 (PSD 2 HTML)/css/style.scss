@@ -318,3 +318,54 @@ main {
         }
     }
 }
+
+footer {
+    background: #2f2f2f;
+    height: 562px;
+    width: 1020px;
+    margin: auto;
+    display: flex;
+    padding: 0 90px;
+    >ul{
+        display: grid;
+        grid-template-columns: 2.5fr repeat(3, 1fr);
+        grid-gap: 20px;
+        list-style: none;
+        margin: auto;
+        >li{
+            >h3{
+                font-weight: 700;
+                font-size: 18px;
+                color: #fff;
+                margin-bottom: 20px;
+            }
+            >article{
+                color: #fff;
+                font-size: 17px;
+                font-weight: 300;
+                margin-bottom: 20px;
+                width: 340px;
+            }
+            >ul{
+                list-style: none;
+                >li{
+                    margin-bottom: 14px;
+                    >a{
+                        text-decoration: none;
+                        color: #fff;
+                        font-size: 17px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            &:first-child{
+                >ul{
+                    display: flex;
+                    >li{
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
